@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyPFCBalance</string>
+    <string name="data_upload_button">Upload data</string>
+    <string name="main_title">Your PFC balance</string>
+</resources>
