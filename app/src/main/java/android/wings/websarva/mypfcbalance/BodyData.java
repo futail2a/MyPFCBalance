@@ -15,4 +15,8 @@ public class BodyData {
         m_height = m_defaultHeight;
         m_bodyComposition = bodyComposition;
     }
+
+    public BodyComposition getBodyComposition() {
+        return m_bodyComposition;
+    }
 }
