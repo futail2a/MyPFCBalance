@@ -19,11 +19,11 @@ public class ShapeUpState implements DietPeriodState {
     }
 
     protected void calcLeanBodyMass(BodyData bodyData){
-        leanBodyMass = bodyData.getBodyComposition().m_weight * (1 - bodyData.getBodyComposition().m_bodyFatPercentage);
+        leanBodyMass = bodyData.getBodyComposition().weight()* (1 - bodyData.getBodyComposition().bodyFatPercentage());
     }
 
     private void calcLeanBodyMass(RenfoBodyComposition bodyComposition){
-            leanBodyMass = bodyComposition.m_leanBodyMass;
+            leanBodyMass = bodyComposition.leanBodyMass();
     }
 
 

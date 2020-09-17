@@ -1,9 +1,9 @@
 package android.wings.websarva.mypfcbalance;
 
 public class BodyData {
-    static float m_defaultHeight;
-    float m_height;
-    BodyComposition m_bodyComposition;
+    private static float m_defaultHeight;
+    private float m_height;
+    private BodyComposition m_bodyComposition;
 
     BodyData (float height, BodyComposition bodyComposition){
         m_defaultHeight= height;
@@ -18,5 +18,9 @@ public class BodyData {
 
     public BodyComposition getBodyComposition() {
         return m_bodyComposition;
+    }
+
+    public float getHeight(){
+        return m_height;
     }
 }

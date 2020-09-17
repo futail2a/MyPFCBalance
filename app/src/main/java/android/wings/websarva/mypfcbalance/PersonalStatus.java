@@ -26,4 +26,9 @@ public class PersonalStatus {
     public void addBodyData(Calendar date, BodyData bodyData){
         m_bodyDataSet.put(date, bodyData);
     }
+
+    public String getName(){return m_name;}
+    public String getSex(){return "not implemented yet";}
+    public Calendar getBirthDay(){return m_birthDay;}
+
 }
