@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
         bodyDataParser.getBodyData();
         BodyData bodyData = bodyDataParser.getBodyData();
 
-        ShapeUpState shapeUp = new ShapeUpState();
-        PFCBalance pfcBalance = shapeUp.calcTotalPFCBalance(bodyData);
+        LeanBulkState state = new LeanBulkState();
+        PFCBalance pfcBalance = state.calcTotalPFCBalance(bodyData);
 
         float p = pfcBalance.protain();
         float c = pfcBalance.carb();

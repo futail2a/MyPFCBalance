@@ -7,7 +7,7 @@ public class ShapeUpState extends DietBalanceCalculator implements DietPeriodSta
         proteinContrast = (float)1.5;
         carbContrast = (float)0.25;
     }
-    
+
     @Override
     public PFCBalance calcTotalPFCBalance(BodyData bodyData){
     return super.calcTotalPFCBalance(bodyData);
