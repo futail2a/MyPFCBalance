@@ -12,7 +12,7 @@ public class PFCBalance {
         this.protein = protain;
         this.fat = fat;
         this.carb = carb;
-        assert protain+fat+carb >100: "Ratio of PFC is invalid";
+        assert protain+fat+carb >1: "Ratio of PFC is invalid";
     }
 
     public float protain(){

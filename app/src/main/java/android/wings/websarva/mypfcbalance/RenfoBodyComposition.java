@@ -15,11 +15,14 @@ public class RenfoBodyComposition extends BodyComposition {
     private float m_basicMetabolicRate;
     private int m_bodyAge;
 
+
     RenfoBodyComposition (float weight, float bodyFatPercentage, float subcutaneousFatPercentage, float skeletalMusclePercentage){
         super(weight,bodyFatPercentage);
         m_subcutaneousFatPercentage = subcutaneousFatPercentage;
         m_skeletalMusclePercentage = skeletalMusclePercentage;
     }
+
+
     RenfoBodyComposition (Calendar date, float weight, float BMI, float bodyFatPercentage, float leanBodyMass, float subcutaneousFatPercentage, int visceralFatLevel, float bodyWaterPercentage, float skeletalMusclePercentage,
                           float muscleMass, float proteinPercentage, float basicMetabolicRate, int bodyAge){
         super(weight,bodyFatPercentage);
