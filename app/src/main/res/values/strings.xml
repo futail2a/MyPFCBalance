@@ -1,5 +1,18 @@
 <resources>
     <string name="app_name">MyPFCBalance</string>
-    <string name="data_upload_button">Upload data</string>
+    <string name="bt_upload_data">Upload data</string>
     <string name="main_title">Your PFC balance</string>
+    <string name="bt_daily_pfc_balance">Check daily PFC </string>
+    <string name="bt_back">Back</string>
+    <string name="tv_morning">Morning</string>
+    <string name="tv_diner">Diner</string>
+    <string name="tv_lunch">Lunch</string>
+    <string name="tv_snack">Snack</string>
+    <string name="tv_sum">Sum</string>
+    <string name="tv_category">Category</string>
+    <string name="tv_calorie">Calorie (kCal)</string>
+    <string name="tv_protein">Protein (g)</string>
+    <string name="tv_fat">Fat (g)</string>
+    <string name="tv_carb">Carbohydrate (g)</string>
+    <string name="tv_sum_calorie">(%1$s)</string>
 </resources>

@@ -1,9 +1,11 @@
 package android.wings.websarva.mypfcbalance;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.graphics.Color;
 import android.util.Log;
+import android.view.View;
 
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.Description;
@@ -17,24 +19,27 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+    private PFCBalance pfcBalance;
+    private float totalCalorie;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         BodyDataParser bodyDataParser = new BodyDataParser();
         bodyDataParser.getBodyData();
         BodyData bodyData = bodyDataParser.getBodyData();
 
         LeanBulkState state = new LeanBulkState();
-        PFCBalance pfcBalance = state.calcTotalPFCBalance(bodyData);
+        pfcBalance = state.calcTotalPFCBalance(bodyData);
+        totalCalorie = state.getTotalCalorie();
 
         float p = pfcBalance.protain();
         float c = pfcBalance.carb();
         float f = pfcBalance.fat();
         createPFCPieChart(p, f,c);
+
     }
 
     private void createPFCPieChart(float p, float f, float c){
@@ -56,6 +61,19 @@ public class MainActivity extends AppCompatActivity {
         description.setEnabled(false);
         pieChart.setDescription(description);
         pieChart.invalidate();
+    }
+
+    public void onDailyPFCButtonClick(View view){
+        Intent intent = new Intent(MainActivity.this, DailyPFCBalance.class);
+        float cal = totalCalorie;
+        float p = pfcBalance.protain();
+        float f = pfcBalance.fat();
+        float c = pfcBalance.carb();
+        intent.putExtra("calorie",cal);
+        intent.putExtra("protein",p);
+        intent.putExtra("fat",f);
+        intent.putExtra("carb",c);
+        startActivity(intent);
     }
 
 }

@@ -17,6 +17,10 @@ public class DietBalanceCalculator {
     private float leanBodyMass;
     private PFCBalance pfcBalance;
 
+    public float getTotalCalorie() {
+        return totalCalorie;
+    }
+
     public PFCBalance calcTotalPFCBalance(BodyData bodyData){
         //TODO Consider delegation
         leanBodyMass = bodyData.getBodyComposition().leanBodyMass();
