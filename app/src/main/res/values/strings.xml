@@ -13,31 +13,31 @@
     <string name="tv_title_sum">Sum</string>
     
     <string name="tv_category_calorie">Calorie (kCal)</string>
-    <string name="tv_morning_calorie">%1$.2f(</string>
-    <string name="tv_lunch_calorie">%1$.2f(</string>
-    <string name="tv_snack_calorie">%1$.2f(</string>
-    <string name="tv_diner_calorie">%1$.2f(</string>
-    <string name="tv_sum_calorie">%1$.2f(</string>
+    <string name="tv_morning_calorie">%1$.2f</string>
+    <string name="tv_lunch_calorie">%1$.2f</string>
+    <string name="tv_snack_calorie">%1$.2f</string>
+    <string name="tv_diner_calorie">%1$.2f</string>
+    <string name="tv_sum_calorie">%1$.2f</string>
     
     <string name="tv_category_protein">Protein (g)</string>
-    <string name="tv_morning_protein">%1$.2f(</string>
-    <string name="tv_lunch_protein">%1$.2f(</string>
-    <string name="tv_snack_protein">%1$.2f(</string>
-    <string name="tv_diner_protein">%1$.2f(</string>
-    <string name="tv_sum_protein">%1$.2f(</string>
+    <string name="tv_morning_protein">%1$.2f</string>
+    <string name="tv_lunch_protein">%1$.2f</string>
+    <string name="tv_snack_protein">%1$.2f</string>
+    <string name="tv_diner_protein">%1$.2f</string>
+    <string name="tv_sum_protein">%1$.2f</string>
     
     <string name="tv_category_fat">Fat (g)</string>
-    <string name="tv_morning_fat">%1$.2f(</string>
-    <string name="tv_lunch_fat">%1$.2f(</string>
-    <string name="tv_snack_fat">%1$.2f(</string>
-    <string name="tv_diner_fat">%1$.2f(</string>
-    <string name="tv_sum_fat">%1$.2f(</string>
+    <string name="tv_morning_fat">%1$.2f</string>
+    <string name="tv_lunch_fat">%1$.2f</string>
+    <string name="tv_snack_fat">%1$.2f</string>
+    <string name="tv_diner_fat">%1$.2f</string>
+    <string name="tv_sum_fat">%1$.2f</string>
     
     <string name="tv_category_carb">Carbohydrate (g)</string>
-    <string name="tv_morning_carb">%1$.2f(</string>
-    <string name="tv_lunch_carb">%1$.2f(</string>
-    <string name="tv_snack_carb">%1$.2f(</string>
-    <string name="tv_diner_carb">%1$.2f(</string>
-    <string name="tv_sum_carb">%1$.2f(</string>
+    <string name="tv_morning_carb">%1$.2f</string>
+    <string name="tv_lunch_carb">%1$.2f</string>
+    <string name="tv_snack_carb">%1$.2f</string>
+    <string name="tv_diner_carb">%1$.2f</string>
+    <string name="tv_sum_carb">%1$.2f</string>
 
 </resources>
