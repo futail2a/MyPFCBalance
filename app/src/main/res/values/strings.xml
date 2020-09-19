@@ -4,15 +4,40 @@
     <string name="main_title">Your PFC balance</string>
     <string name="bt_daily_pfc_balance">Check daily PFC </string>
     <string name="bt_back">Back</string>
-    <string name="tv_morning">Morning</string>
-    <string name="tv_diner">Diner</string>
-    <string name="tv_lunch">Lunch</string>
-    <string name="tv_snack">Snack</string>
-    <string name="tv_sum">Sum</string>
-    <string name="tv_category">Category</string>
-    <string name="tv_calorie">Calorie (kCal)</string>
-    <string name="tv_protein">Protein (g)</string>
-    <string name="tv_fat">Fat (g)</string>
-    <string name="tv_carb">Carbohydrate (g)</string>
-    <string name="tv_sum_calorie">(%1$s)</string>
+    
+    <string name="tv_title_category">Category</string>
+    <string name="tv_title_morning">Morning</string>
+    <string name="tv_title_lunch">Lunch</string>
+    <string name="tv_title_snack">Snack</string>
+    <string name="tv_title_diner">Diner</string>
+    <string name="tv_title_sum">Sum</string>
+    
+    <string name="tv_category_calorie">Calorie (kCal)</string>
+    <string name="tv_morning_calorie">(%1$f)</string>
+    <string name="tv_lunch_calorie">(%1$f)</string>
+    <string name="tv_snack_calorie">(%1$f)</string>
+    <string name="tv_diner_calorie">(%1$f)</string>
+    <string name="tv_sum_calorie">(%1$f)</string>
+    
+    <string name="tv_category_protein">Protein (g)</string>
+    <string name="tv_morning_protein">(%1$f)</string>
+    <string name="tv_lunch_protein">(%1$f)</string>
+    <string name="tv_snack_protein">(%1$f)</string>
+    <string name="tv_diner_protein">(%1$f)</string>
+    <string name="tv_sum_protein">(%1$f)</string>
+    
+    <string name="tv_category_fat">Fat (g)</string>
+    <string name="tv_morning_fat">(%1$f)</string>
+    <string name="tv_lunch_fat">(%1$f)</string>
+    <string name="tv_snack_fat">(%1$f)</string>
+    <string name="tv_diner_fat">(%1$f)</string>
+    <string name="tv_sum_fat">(%1$f)</string>
+    
+    <string name="tv_category_carb">Carbohydrate (g)</string>
+    <string name="tv_morning_carb">(%1$f)</string>
+    <string name="tv_lunch_carb">(%1$f)</string>
+    <string name="tv_snack_carb">(%1$f)</string>
+    <string name="tv_diner_carb">(%1$f)</string>
+    <string name="tv_sum_carb">(%1$f)</string>
+
 </resources>

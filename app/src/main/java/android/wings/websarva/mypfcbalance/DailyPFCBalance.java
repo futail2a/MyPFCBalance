@@ -23,7 +23,6 @@ public class DailyPFCBalance extends AppCompatActivity {
         carb = intent.getFloatExtra("carb", 0);
 
         String tv_sum_calorie = getString(R.string.tv_sum_calorie, calorie);
-
     }
 
 
