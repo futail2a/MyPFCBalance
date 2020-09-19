@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class DailyPFCBalance extends AppCompatActivity {
     private float calorie;
@@ -22,7 +23,10 @@ public class DailyPFCBalance extends AppCompatActivity {
         fat = intent.getFloatExtra("fat", 0);
         carb = intent.getFloatExtra("carb", 0);
 
-        String tv_sum_calorie = getString(R.string.tv_sum_calorie, calorie);
+//          = getString(R.string.tv_sum_calorie, (float)10);
+        TextView sumCalorie = (TextView) findViewById(R.id.sum_calorie);
+        sumCalorie.setText(getResources()
+                .getString(R.string.tv_sum_calorie, (float)10));
     }
 
 
