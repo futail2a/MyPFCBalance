@@ -6,29 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".DailyPFCBalance">
 
-
-    <TableLayout
+    <GridLayout
         android:id="@+id/tableLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:stretchColumns="*"
+        android:columnCount="6"
+        android:rowCount="6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="5dp">
 
             <TextView
                 android:id="@+id/title_category"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_column="0"
+                android:layout_row="0"
                 android:background="@color/colorPrimary"
                 android:gravity="center"
                 android:text="@string/tv_title_category"
@@ -38,112 +35,114 @@
                 android:id="@+id/title_morning"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_column="1"
+                android:layout_row="0"
                 android:background="@color/colorPrimary"
                 android:gravity="center"
                 android:text="@string/tv_title_morning"
                 android:textColor="@color/white" />
 
             <TextView
+                android:id="@+id/title_lunch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_column="2"
+                android:layout_row="0"
                 android:background="@color/colorPrimary"
                 android:gravity="center"
                 android:text="@string/tv_title_lunch"
                 android:textColor="@color/white" />
 
             <TextView
-                android:id="@+id/title_lunch"
+                android:id="@+id/title_snack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_column="3"
+                android:layout_row="0"
                 android:background="@color/colorPrimary"
                 android:gravity="center"
                 android:text="@string/tv_title_snack"
                 android:textColor="@color/white" />
 
             <TextView
-                android:id="@+id/title_snack"
+                android:id="@+id/title_diner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_column="4"
+                android:layout_row="0"
                 android:background="@color/colorPrimary"
                 android:gravity="center"
                 android:text="@string/tv_title_diner"
                 android:textColor="@color/white" />
 
             <TextView
-                android:id="@+id/title_diner"
+                android:id="@+id/title_sum"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_column="5"
+                android:layout_row="0"
                 android:background="@color/colorAccent"
                 android:gravity="center"
                 android:text="@string/tv_title_sum"
                 android:textColor="@color/white" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="1"
                 android:text="@string/tv_category_calorie" />
 
             <TextView
                 android:id="@+id/morning_calorie"
-                android:layout_width="0dip"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_column="1"
+                android:layout_row="1"
                 android:gravity="center"
                 android:text="@string/tv_morning_calorie" />
 
             <TextView
                 android:id="@+id/lunch_calorie"
-                android:layout_width="0dip"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_column="2"
+                android:layout_row="1"
                 android:gravity="center"
                 android:text="@string/tv_lunch_calorie" />
 
             <TextView
                 android:id="@+id/snack_calorie"
-                android:layout_width="0dip"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_column="3"
+                android:layout_row="1"
                 android:gravity="center"
                 android:text="@string/tv_snack_calorie" />
 
             <TextView
                 android:id="@+id/diner_calorie"
-                android:layout_width="0dip"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_column="4"
+                android:layout_row="1"
                 android:gravity="center"
                 android:text="@string/tv_diner_calorie" />
 
             <TextView
                 android:id="@+id/sum_calorie"
-                android:layout_width="0dip"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_column="5"
+                android:layout_row="1"
                 android:gravity="center"
                 android:text="@string/tv_sum_calorie" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="2"
                 android:text="@string/tv_category_protein" />
 
             <TextView
@@ -151,6 +150,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:layout_column="1"
+                android:layout_row="2"
                 android:text="@string/tv_morning_protein" />
 
             <TextView
@@ -158,6 +159,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:layout_column="2"
+                android:layout_row="2"
                 android:text="@string/tv_lunch_protein" />
 
             <TextView
@@ -165,6 +168,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:layout_column="3"
+                android:layout_row="2"
                 android:text="@string/tv_snack_protein" />
 
             <TextView
@@ -172,6 +177,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:layout_column="4"
+                android:layout_row="2"
                 android:text="@string/tv_diner_protein" />
 
             <TextView
@@ -179,17 +186,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:layout_column="5"
+                android:layout_row="2"
                 android:text="@string/tv_sum_protein" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="3"
                 android:text="@string/tv_category_fat" />
 
             <TextView
@@ -197,6 +202,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:layout_column="1"
+                android:layout_row="3"
                 android:text="@string/tv_morning_fat" />
 
             <TextView
@@ -204,6 +211,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:layout_column="2"
+                android:layout_row="3"
                 android:text="@string/tv_lunch_fat" />
 
             <TextView
@@ -211,6 +220,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:layout_column="3"
+                android:layout_row="3"
                 android:text="@string/tv_snack_fat" />
 
             <TextView
@@ -218,6 +229,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:layout_column="4"
+                android:layout_row="3"
                 android:text="@string/tv_diner_fat" />
 
             <TextView
@@ -225,17 +238,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:layout_column="5"
+                android:layout_row="3"
                 android:text="@string/tv_sum_fat" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="4"
                 android:text="@string/tv_category_carb" />
 
             <TextView
@@ -243,6 +254,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:layout_column="1"
+                android:layout_row="4"
                 android:text="@string/tv_morning_carb" />
 
             <TextView
@@ -250,6 +263,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:layout_column="2"
+                android:layout_row="4"
                 android:text="@string/tv_lunch_carb" />
 
             <TextView
@@ -257,6 +272,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:layout_column="3"
+                android:layout_row="4"
                 android:text="@string/tv_snack_carb" />
 
             <TextView
@@ -264,6 +281,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:layout_column="4"
+                android:layout_row="4"
                 android:text="@string/tv_diner_carb" />
 
             <TextView
@@ -271,10 +290,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:layout_column="5"
+                android:layout_row="4"
                 android:text="@string/tv_sum_carb" />
-        </TableRow>
-    </TableLayout>
 
+    </GridLayout>
     <Button
         android:id="@+id/back_main_button"
         android:layout_width="wrap_content"
