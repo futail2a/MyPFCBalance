@@ -15,7 +15,7 @@ public class PFCBalance {
         assert protain+fat+carb >1: "Ratio of PFC is invalid";
     }
 
-    public float protain(){
+    public float protein(){
         return protein;
     }
 

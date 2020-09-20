@@ -21,6 +21,9 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     private PFCBalance pfcBalance;
     private float totalCalorie;
+    private float protein;
+    private float fat;
+    private float carb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,9 +36,13 @@ public class MainActivity extends AppCompatActivity {
 
         LeanBulkState state = new LeanBulkState();
         pfcBalance = state.calcTotalPFCBalance(bodyData);
-        totalCalorie = state.getTotalCalorie();
 
-        float p = pfcBalance.protain();
+        totalCalorie = state.getTotalCalorie();
+        protein = state.getProtein();
+        fat = state.getFat();
+        carb = state.getCarb();
+
+        float p = pfcBalance.protein();
         float c = pfcBalance.carb();
         float f = pfcBalance.fat();
         createPFCPieChart(p, f,c);
@@ -66,9 +73,9 @@ public class MainActivity extends AppCompatActivity {
     public void onDailyPFCButtonClick(View view){
         Intent intent = new Intent(MainActivity.this, DailyPFCBalance.class);
         float cal = totalCalorie;
-        float p = pfcBalance.protain();
-        float f = pfcBalance.fat();
-        float c = pfcBalance.carb();
+        float p = protein;
+        float f = fat;
+        float c = carb;
         intent.putExtra("calorie",cal);
         intent.putExtra("protein",p);
         intent.putExtra("fat",f);

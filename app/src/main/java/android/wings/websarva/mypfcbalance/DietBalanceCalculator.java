@@ -21,6 +21,30 @@ public class DietBalanceCalculator {
         return totalCalorie;
     }
 
+    public float getProtein() {
+        return protein;
+    }
+
+    public float getProteinCalorie(){
+        return proteinCalorie;
+    }
+
+    public float getFat(){
+        return fat;
+    }
+
+    public float getFatCalorie(){
+        return fatCalorie;
+    }
+
+    public float getCarb(){
+        return carb;
+    }
+
+    public float getCarbCalorie(){
+        return carbCalorie;
+    }
+
     public PFCBalance calcTotalPFCBalance(BodyData bodyData){
         //TODO Consider delegation
         leanBodyMass = bodyData.getBodyComposition().leanBodyMass();
@@ -29,8 +53,8 @@ public class DietBalanceCalculator {
         calcProteinCalorie();
         calcCarbCalorie();
         calcCarb();
-        calcFat();
         calcFatCalorie();
+        calcFat();
 
 
         float p = proteinCalorie/totalCalorie;
